@@ -731,6 +731,274 @@ KINETIC is intended for **sports-performance analysis and educational/research p
 * [ ] Testing
 * [ ] Production deployment
 
+For your GitHub `README.md`, these three sections can be structured like this. Replace the placeholder image/video filenames once you have them.
+
+## Installation & Usage
+
+````markdown
+## Installation & Usage
+
+### Prerequisites
+
+Make sure the following are installed:
+
+- Node.js 18+
+- npm
+- Python 3.10+
+- Git
+- VS Code
+- PostgreSQL
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/kinetic-performance-platform.git
+cd kinetic-performance-platform
+````
+
+### 2. Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend will be available at:
+
+```text
+http://localhost:5173
+```
+
+### 3. Backend Setup
+
+Open a new terminal:
+
+```bash
+cd backend
+
+python -m venv venv
+```
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### macOS / Linux
+
+```bash
+source venv/bin/activate
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Start the FastAPI server:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+The API will be available at:
+
+```text
+http://localhost:8000
+```
+
+API documentation:
+
+```text
+http://localhost:8000/docs
+```
+
+### 4. Environment Variables
+
+Create a `.env` file in the backend directory.
+
+```env
+DATABASE_URL=postgresql://username:password@localhost:5432/kinetic
+
+SECRET_KEY=your_secret_key
+
+STRAVA_CLIENT_ID=your_strava_client_id
+STRAVA_CLIENT_SECRET=your_strava_client_secret
+STRAVA_REDIRECT_URI=http://localhost:8000/api/strava/callback
+```
+
+### 5. Run the Application
+
+Start the backend:
+
+```bash
+cd backend
+uvicorn app.main:app --reload
+```
+
+Start the frontend in another terminal:
+
+```bash
+cd frontend
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+### 6. Application Workflow
+
+1. Create an account or log in.
+2. Connect your Strava account.
+3. Import cycling activities.
+4. View cycling performance metrics.
+5. Analyse distance, speed, elevation, cadence and heart rate.
+6. Upload a cycling biomechanics video.
+7. Run pose and movement analysis.
+8. Compare pre-workout and post-workout measurements.
+9. Generate an AI-assisted performance report.
+
+````
+
+## Screenshots
+
+```markdown
+## Screenshots
+
+### Dashboard
+
+The main dashboard provides an overview of cycling performance, recent activities and key training metrics.
+
+![KINETIC Dashboard](docs/screenshots/dashboard.png)
+
+### Activity Analytics
+
+Activity analytics provides detailed information about individual cycling sessions, including distance, duration, speed and elevation.
+
+![Activity Analytics](docs/screenshots/activity-analytics.png)
+
+### Performance Analytics
+
+Performance trends allow users to analyse changes in cycling performance over time.
+
+![Performance Analytics](docs/screenshots/performance.png)
+
+### Biomechanics Analysis
+
+The biomechanics module analyses cycling posture and body movement using computer vision and pose estimation.
+
+![Biomechanics Analysis](docs/screenshots/biomechanics.png)
+
+### Pre vs Post Workout Analysis
+
+The comparison interface allows users to compare biomechanical measurements between two sessions.
+
+![Pre vs Post Analysis](docs/screenshots/pre-post-analysis.png)
+
+### Performance Report
+
+The report module combines cycling metrics and biomechanics results into a single performance summary.
+
+![Performance Report](docs/screenshots/report.png)
+````
+
+Recommended repository structure:
+
+```text
+docs/
+└── screenshots/
+    ├── dashboard.png
+    ├── activity-analytics.png
+    ├── performance.png
+    ├── biomechanics.png
+    ├── pre-post-analysis.png
+    └── report.png
+```
+
+## Demo Video
+
+````markdown
+## Demo Video
+
+A complete demonstration of the KINETIC platform is available below.
+
+### Full Application Demo
+
+[![KINETIC – AI Cycling Performance & Biomechanics Platform](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+The demo covers:
+
+- User authentication
+- Cycling dashboard
+- Strava activity integration
+- Activity analytics
+- Performance trends
+- Biomechanics video upload
+- Pose estimation
+- Pre-workout vs post-workout comparison
+- AI-generated performance insights
+- Performance report generation
+
+### Demo Flow
+
+```text
+Login
+  ↓
+Dashboard
+  ↓
+Connect Strava
+  ↓
+Import Activities
+  ↓
+Cycling Analytics
+  ↓
+Upload Biomechanics Video
+  ↓
+Pose Estimation
+  ↓
+Pre vs Post Comparison
+  ↓
+AI Performance Analysis
+  ↓
+Final Report
+````
+
+> **Demo:** Coming soon
+
+````
+
+### Suggested README order
+
+For your project, I would use:
+
+```text
+# KINETIC
+AI Cycling Performance & Biomechanics Platform
+
+1. Project Overview
+2. Features
+3. Technology Stack
+4. System Architecture
+5. Installation & Usage
+6. Screenshots
+7. Demo Video
+8. Project Workflow
+9. AI & Biomechanics Pipeline
+10. API Documentation
+11. Database Schema
+12. Future Enhancements
+13. Contributors
+14. License
+````
+
+Once you have the **actual screenshots of your Base44 application**, we can replace the placeholders with the real UI and build the README around the actual application rather than a generic template.
+
 ---
 
 ## License
