@@ -1,5 +1,3 @@
-Absolutely. For GitHub, you should have a **professional project description** that explains the purpose, problem, features, architecture, AI component, and future scope. You can use the following as your repository `README.md`.
-
 # KINETIC — AI Cycling Performance & Biomechanics Platform
 
 ## Project Overview
